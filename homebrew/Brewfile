@@ -1,0 +1,39 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "jql"
+brew "mas"
+brew "nvm"
+brew "ssh-copy-id", link: true
+brew "starship"
+brew "zsh"
+brew "zsh-autosuggestions"
+
+cask "1password"
+cask "figma"
+cask "firefox"
+cask "font-fira-code"
+cask "google-chrome"
+cask "iina"
+cask "iterm2"
+cask "nrlquaker-winbox"
+cask "rectangle"
+cask "spotify"
+cask "telegram"
+cask "visual-studio-code"
+cask "webstorm"
+cask "zoom"
+
+mas "1Password for Safari", id: 1569813296
+mas "Hand Mirror", id: 1502839586
+mas "Paste", id: 967805235
+mas "Pixel Winch", id: 735066709
+mas "System Color Picker", id: 1545870783
+mas "Teampaper Snap", id: 1199502670
+mas "The Unarchiver", id: 425424353
+mas "Things", id: 904280696
+mas "Tweetbot 3 for Twitter", id: 1384080005
+mas "WiFi Explorer", id: 494803304
