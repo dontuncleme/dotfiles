@@ -1,8 +1,5 @@
 [memory_usage]
 disabled = true
-show_percentage = true
-show_swap = false
-threshold = -1
 
 [custom.arc]
 command = "arc info --json | jql '.\"branch\"' -r"
