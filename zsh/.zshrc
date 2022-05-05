@@ -5,8 +5,13 @@ export NVM_DIR="$HOME/.nvm"
 export LANG=en_US.UTF-8
 export EDITOR="code -w"
 
-ZSH_THEME="robbyrussell"
-plugins=(git npm brew command-not-found macos zsh-autosuggestions)
+plugins=(
+    git
+    npm
+    brew
+    command-not-found
+    zsh-autosuggestions
+)
 
 # Aliases
 if [ -f ~/.aliases.zsh ]; then
