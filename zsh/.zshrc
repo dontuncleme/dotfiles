@@ -13,15 +13,8 @@ plugins=(
     zsh-autosuggestions
 )
 
-# Aliases
-if [ -f ~/.aliases.zsh ]; then
-    . ~/.aliases.zsh
-fi
-
-# Private
-if [ -f ~/.private.zsh ]; then
-    . ~/.private.zsh
-fi
+[ -f $HOME/.aliases.zsh ] && source $HOME/.aliases.zsh
+[ -f $HOME/.private.zsh ] && source $HOME/.private.zsh
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
