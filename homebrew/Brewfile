@@ -13,6 +13,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 
 cask "1password"
+cask "cleanshot"
 cask "figma"
 cask "firefox"
 cask "font-fira-code"
@@ -32,7 +33,6 @@ mas "Hand Mirror", id: 1502839586
 mas "Paste", id: 967805235
 mas "Pixel Winch", id: 735066709
 mas "System Color Picker", id: 1545870783
-mas "Teampaper Snap", id: 1199502670
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Tweetbot 3 for Twitter", id: 1384080005
