@@ -3,7 +3,6 @@
 This repository includes configuration for:
 
 - [Homebrew](https://brew.sh/)
-- [Irssi](https://irssi.org/)
 - [OhMyZsh](https://ohmyz.sh/)
 - [Starship](https://starship.rs/)
 

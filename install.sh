@@ -14,10 +14,6 @@ ln -sf $HOME/.dotfiles/zsh/.aliases.zsh $HOME
 mkdir -p $HOME/.config
 ln -sf $HOME/.dotfiles/starship/starship.toml $HOME/.config
 
-# Irssi
-mkdir -p $HOME/.irssi
-ln -sf $HOME/.dotfiles/irssi/config $HOME/.irssi
-
 # Rosetta (Macs with M1 chip)
 # Open a shell that's running using Rosetta: `arch -x86_64 zsh`
 softwareupdate --install-rosetta
