@@ -4,7 +4,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 
-brew "jql"
+brew "jq"
 brew "mas"
 brew "nvm"
 brew "ssh-copy-id", link: true

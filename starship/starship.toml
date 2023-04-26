@@ -2,7 +2,7 @@
 disabled = true
 
 [custom.arc]
-command = "arc info --json | jql '.\"branch\"' -r"
+command = "arc info --json | jq '.branch' -r"
 when = """ arc info """
 style = "bold blue"
 format = "on [ $output]($style) "
