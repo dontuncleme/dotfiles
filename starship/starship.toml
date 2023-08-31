@@ -6,6 +6,7 @@ command = "arc info --json | jq '.branch' -r"
 when = """ arc info """
 style = "bold blue"
 format = "on [ $output]($style) "
+ignore_timeout = true
 
 [nodejs]
 disabled = true
