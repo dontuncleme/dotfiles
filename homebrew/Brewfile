@@ -35,6 +35,5 @@ cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Hand Mirror", id: 1502839586
 mas "Paste", id: 967805235
-mas "System Color Picker", id: 1545870783
 mas "Things", id: 904280696
 mas "WiFi Explorer", id: 494803304
