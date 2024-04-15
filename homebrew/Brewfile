@@ -14,24 +14,19 @@ brew "zsh"
 
 cask "1password"
 cask "cleanshot"
-cask "figma"
 cask "firefox"
 cask "font-fira-code"
 cask "google-chrome"
-cask "iina"
 cask "iterm2"
-cask "keka"
 cask "pixelsnap"
 cask "raycast"
 cask "rectangle"
 cask "spotify"
 cask "telegram"
 cask "visual-studio-code"
-cask "webstorm"
 cask "zoom"
 
 mas "1Password for Safari", id: 1569813296
 mas "Hand Mirror", id: 1502839586
 mas "Paste", id: 967805235
 mas "Things", id: 904280696
-mas "WiFi Explorer", id: 494803304
