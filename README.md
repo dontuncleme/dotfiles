@@ -11,7 +11,7 @@ This repository includes configuration for:
 Clone the repository:
 
 ```bash
-git clone git@github.com:dontuncleme/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
+git clone https://github.com/dontuncleme/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 ```
 
 Run the installation script:
