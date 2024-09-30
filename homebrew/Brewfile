@@ -23,6 +23,7 @@ cask "rectangle"
 cask "spotify"
 cask "telegram"
 cask "visual-studio-code"
+cask "wezterm"
 cask "zoom"
 
 mas "1Password for Safari", id: 1569813296
