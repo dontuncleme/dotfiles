@@ -14,6 +14,13 @@ ln -sf $HOME/.dotfiles/zsh/.aliases.zsh $HOME
 mkdir -p $HOME/.config
 ln -sf $HOME/.dotfiles/starship/starship.toml $HOME/.config
 
+# WezTerm
+mkdir -p $HOME/.config/wezterm/colors
+cd $HOME/.config/wezterm/colors/
+curl -O https://raw.githubusercontent.com/nyoom-engineering/oxocarbon-wezterm/main/oxocarbon-dark.toml
+
+ln -sf $HOME/.dotfiles/wezterm/.wezterm.lua $HOME
+
 # Rosetta (Macs with M1 chip)
 # Open a shell that's running using Rosetta: `arch -x86_64 zsh`
 softwareupdate --install-rosetta
