@@ -17,7 +17,7 @@ ln -sf $HOME/.dotfiles/starship/starship.toml $HOME/.config
 # WezTerm
 mkdir -p $HOME/.config/wezterm/colors
 cd $HOME/.config/wezterm/colors/
-curl -O https://raw.githubusercontent.com/nyoom-engineering/oxocarbon-wezterm/main/oxocarbon-dark.toml
+curl -O https://raw.githubusercontent.com/dracula/wezterm/refs/heads/main/dracula.toml
 
 ln -sf $HOME/.dotfiles/wezterm/.wezterm.lua $HOME
 
