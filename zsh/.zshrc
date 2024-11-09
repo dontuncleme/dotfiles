@@ -13,10 +13,13 @@ plugins=(
     zsh-autosuggestions
 )
 
-[ -f $HOME/.aliases.zsh ] && source $HOME/.aliases.zsh
-[ -f $HOME/.private.zsh ] && source $HOME/.private.zsh
-
+export HOMEBREW_NO_ENV_HINTS=false
 eval "$(/opt/homebrew/bin/brew shellenv)"
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 eval "$(starship init zsh)"
 
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+PATH=~/.console-ninja/.bin:$PATH
+
+[ -f $HOME/.aliases.zsh ] && source $HOME/.aliases.zsh
+[ -f $HOME/.private.zsh ] && source $HOME/.private.zsh
