@@ -12,6 +12,7 @@ brew "zsh-autosuggestions"
 brew "zsh"
 
 cask "1password"
+cask "anki"
 cask "cleanshot"
 cask "discord"
 cask "firefox"

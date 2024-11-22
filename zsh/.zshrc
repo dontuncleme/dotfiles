@@ -5,6 +5,9 @@ export NVM_DIR="$HOME/.nvm"
 export LANG=en_US.UTF-8
 export EDITOR="code -w"
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_ENV_HINTS=1
+
 plugins=(
     git
     npm
@@ -13,7 +16,6 @@ plugins=(
     zsh-autosuggestions
 )
 
-export HOMEBREW_NO_ENV_HINTS=false
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
