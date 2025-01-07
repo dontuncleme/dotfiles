@@ -21,6 +21,6 @@ curl -O https://raw.githubusercontent.com/dracula/wezterm/refs/heads/main/dracul
 
 ln -sf $HOME/.dotfiles/wezterm/.wezterm.lua $HOME
 
-# Rosetta (Macs with M1 chip)
+# Rosetta (for Apple Silicon Macs)
 # Open a shell that's running using Rosetta: `arch -x86_64 zsh`
 softwareupdate --install-rosetta
