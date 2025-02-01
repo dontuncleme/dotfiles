@@ -21,7 +21,5 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(starship init zsh)"
 
-PATH=~/.console-ninja/.bin:$PATH
-
 [ -f $HOME/.aliases.zsh ] && source $HOME/.aliases.zsh
 [ -f $HOME/.private.zsh ] && source $HOME/.private.zsh
