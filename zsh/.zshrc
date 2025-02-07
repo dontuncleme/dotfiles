@@ -21,5 +21,7 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(starship init zsh)"
 
-[ -f $HOME/.aliases.zsh ] && source $HOME/.aliases.zsh
+source $HOME/.aliases.zsh
+
+# private
 [ -f $HOME/.private.zsh ] && source $HOME/.private.zsh
