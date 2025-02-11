@@ -5,6 +5,7 @@ This repository includes configuration for:
 - [Homebrew](https://brew.sh/)
 - [OhMyZsh](https://ohmyz.sh/)
 - [Starship](https://starship.rs/)
+- [WezTerm](https://wezterm.org/)
 
 ## Installation
 
