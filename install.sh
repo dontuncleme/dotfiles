@@ -5,7 +5,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle --file=./homebrew/Brewfile
 
-# Oh My Zsh
+# OhMyZsh
 chsh -s /bin/zsh
 ln -sf $HOME/.dotfiles/zsh/.zshrc $HOME
 ln -sf $HOME/.dotfiles/zsh/.aliases.zsh $HOME
