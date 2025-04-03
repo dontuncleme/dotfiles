@@ -1,14 +1,25 @@
 {
     "cSpell.words": [
+        "Aloxaf",
         "anki",
+        "appendhistory",
+        "cdreplay",
         "chsh",
         "cleanshot",
+        "dups",
         "fira",
+        "HISTDUP",
         "iina",
         "keka",
+        "OMZL",
+        "OMZP",
         "pixelsnap",
+        "SAVEHIST",
+        "sharehistory",
         "shellenv",
         "softwareupdate",
-        "wezterm"
+        "wezterm",
+        "zinit",
+        "zoxide"
     ]
 }

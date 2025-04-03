@@ -8,7 +8,6 @@ brew bundle --file=./homebrew/Brewfile
 # OhMyZsh
 chsh -s /bin/zsh
 ln -sf $HOME/.dotfiles/zsh/.zshrc $HOME
-ln -sf $HOME/.dotfiles/zsh/.aliases.zsh $HOME
 
 # Config
 mkdir -p $HOME/.config

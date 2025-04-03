@@ -2,11 +2,10 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "buo/cask-upgrade"
 
+brew "fzf"
 brew "mas"
 brew "nvm"
-brew "ssh-copy-id", link: true
 brew "starship"
-brew "zsh-autosuggestions"
 brew "zsh"
 
 cask "1password"
