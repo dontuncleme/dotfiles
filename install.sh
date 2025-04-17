@@ -9,7 +9,7 @@ brew bundle --file=./homebrew/Brewfile
 chsh -s /bin/zsh
 ln -sf $HOME/.dotfiles/zsh/.zshrc $HOME
 
-# Config
+# Starship
 mkdir -p $HOME/.config
 ln -sf $HOME/.dotfiles/starship/starship.toml $HOME/.config
 
@@ -17,5 +17,8 @@ ln -sf $HOME/.dotfiles/starship/starship.toml $HOME/.config
 mkdir -p $HOME/.config/wezterm/colors
 cd $HOME/.config/wezterm/colors/
 curl -O https://raw.githubusercontent.com/dracula/wezterm/refs/heads/main/dracula.toml
+
+# git config
+git config --global alias.push-fwl "push --force-with-lease"
 
 ln -sf $HOME/.dotfiles/wezterm/.wezterm.lua $HOME
