@@ -1,5 +1,2 @@
-[memory_usage]
-disabled = true
-
 [nodejs]
 disabled = true

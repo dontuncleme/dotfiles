@@ -12,6 +12,7 @@ cask "brave-browser"
 cask "cleanshot"
 cask "firefox"
 cask "font-fira-code"
+cask "ggh"
 cask "iina"
 cask "keka"
 cask "notion"
@@ -24,6 +25,7 @@ cask "visual-studio-code"
 cask "wezterm"
 
 mas "1Password for Safari", id: 1569813296
+mas "Color Picker", id: 1545870783
 mas "Hand Mirror", id: 1502839586
 mas "Paste", id: 967805235
 mas "Things", id: 904280696
