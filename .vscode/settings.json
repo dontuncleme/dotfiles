@@ -8,6 +8,7 @@
         "cleanshot",
         "dups",
         "fira",
+        "github",
         "HISTDUP",
         "iina",
         "keka",
@@ -18,6 +19,8 @@
         "sharehistory",
         "shellenv",
         "softwareupdate",
+        "vite",
+        "Vite",
         "wezterm",
         "zinit",
         "zoxide"

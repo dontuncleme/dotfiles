@@ -6,6 +6,7 @@ This repository includes configuration for:
 - [OhMyZsh](https://ohmyz.sh/) - Framework for managing Zsh configuration
 - [Starship](https://starship.rs/) - Minimal, blazing-fast, and infinitely customizable prompt for any shell
 - [WezTerm](https://wezterm.org/) - GPU-accelerated cross-platform terminal emulator and multiplexer
+- [GitHub Copilot](https://github.com/features/copilot) - AI pair programming tool
 
 ## Installation
 
@@ -44,3 +45,13 @@ Terminal configuration in `.wezterm.lua` includes:
 
 - [Dracula theme](https://draculatheme.com/) installation
 - Custom key mappings and configuration
+
+### GitHub Copilot
+
+Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) for GitHub Copilot in `github/copilot-instructions.md`.
+
+### Git Aliases
+
+The installation script sets up git aliases:
+
+- `push-fwl` - Push with --force-with-lease flag
