@@ -2,10 +2,10 @@
 
 This repository includes configuration for:
 
-- [Homebrew](https://brew.sh/)
-- [OhMyZsh](https://ohmyz.sh/)
-- [Starship](https://starship.rs/)
-- [WezTerm](https://wezterm.org/)
+- [Homebrew](https://brew.sh/) - Package manager for macOS
+- [OhMyZsh](https://ohmyz.sh/) - Framework for managing Zsh configuration
+- [Starship](https://starship.rs/) - Minimal, blazing-fast, and infinitely customizable prompt for any shell
+- [WezTerm](https://wezterm.org/) - GPU-accelerated cross-platform terminal emulator and multiplexer
 
 ## Installation
 
@@ -20,3 +20,27 @@ Run the installation script:
 ```bash
 ./install.sh
 ```
+
+## Configuration Details
+
+### Homebrew
+
+The `Brewfile` in the `homebrew/` directory contains all the packages, casks, and apps that will be installed.
+
+### Zsh
+
+The dotfiles include:
+
+- `.zshrc` - Main Zsh configuration file
+- `.private.zsh` - Private configuration (not tracked in git)
+
+### Starship
+
+The prompt is configured via `starship.toml` which is symlinked to `~/.config/starship.toml`.
+
+### WezTerm
+
+Terminal configuration in `.wezterm.lua` includes:
+
+- [Dracula theme](https://draculatheme.com/) installation
+- Custom key mappings and configuration
