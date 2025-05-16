@@ -55,3 +55,4 @@ Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-mod
 The installation script sets up git aliases:
 
 - `push-fwl` - Push with --force-with-lease flag
+- `ss` - Status with short format
