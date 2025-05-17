@@ -48,18 +48,12 @@ Terminal configuration in `.wezterm.lua` includes:
 
 ### GitHub Copilot
 
-- Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) for GitHub Copilot in `github/copilot-instructions.md`.
-- Includes a guide for [Conventional Commits](https://www.conventionalcommits.org/) in `github/conventional-commits.md`.
+Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) for GitHub Copilot in `github/copilot-instructions.md`.
 
 To set up GitHub Copilot with these configurations, add the following to your VS Code `settings.json`:
 
 ```json
 {
-  "github.copilot.chat.commitMessageGeneration.instructions": [
-    {
-      "file": "~/.github/conventional-commits.md"
-    }
-  ],
   "chat.instructionsFilesLocations": {
     "~/.github/copilot-instructions.md": true
   }
