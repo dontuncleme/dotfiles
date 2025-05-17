@@ -25,5 +25,6 @@ git config --global alias.ss "status --short"
 # GitHub Copilot
 mkdir -p $HOME/.github
 ln -sf $HOME/.dotfiles/github/copilot-instructions.md $HOME/.github/copilot-instructions.md
+ln -sf $HOME/.dotfiles/github/conventional-commits.md $HOME/.github/conventional-commits.md
 
 ln -sf $HOME/.dotfiles/wezterm/.wezterm.lua $HOME

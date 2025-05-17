@@ -48,7 +48,8 @@ Terminal configuration in `.wezterm.lua` includes:
 
 ### GitHub Copilot
 
-Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) for GitHub Copilot in `github/copilot-instructions.md`.
+- Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) for GitHub Copilot in `github/copilot-instructions.md`.
+- Includes a guide for [Conventional Commits](https://www.conventionalcommits.org/) in `github/conventional-commits.md`.
 
 ### Git Aliases
 
