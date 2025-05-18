@@ -46,6 +46,10 @@ Terminal configuration in `.wezterm.lua` includes:
 - [Dracula theme](https://draculatheme.com/) installation
 - Custom key mappings and configuration
 
+### Git Configuration
+
+The `install.sh` script symlinks `git/.gitconfig` to `~/.gitconfig`. This file contains global Git configurations.
+
 ### GitHub Copilot
 
 Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) for GitHub Copilot in `github/copilot-instructions.md`.
@@ -59,10 +63,3 @@ To set up GitHub Copilot with these configurations, add the following to your VS
   }
 }
 ```
-
-### Git Aliases
-
-The installation script sets up git aliases:
-
-- `push-fwl` - Push with --force-with-lease flag
-- `ss` - Status with short format
