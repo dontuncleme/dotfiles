@@ -19,8 +19,7 @@ cd $HOME/.config/wezterm/colors/
 curl -O https://raw.githubusercontent.com/dracula/wezterm/refs/heads/main/dracula.toml
 
 # git config
-git config --global alias.push-fwl "push --force-with-lease"
-git config --global alias.ss "status --short"
+ln -sf $HOME/.dotfiles/git/.gitconfig $HOME
 
 # GitHub Copilot
 mkdir -p $HOME/.github

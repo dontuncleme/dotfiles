@@ -1,0 +1,27 @@
+[alias]
+    # https://blog.gitbutler.com/git-tips-2-new-stuff-in-git/#safe-force-pushing
+    push-fwl = push --force-with-lease
+    ss = status --short
+[branch]
+    # https://blog.gitbutler.com/git-tips-2-new-stuff-in-git/#some-git-branch-stuff
+    sort = -committerdate
+[color]
+    ui = true
+[core]
+    ignorecase = false
+[diff]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git/#better-diff
+    algorithm = histogram
+    # "moved from" is purple and "moved to" is blue. I wish it had an arrow or something
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+[init]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git/#default-branch
+    defaultBranch = trunk
+[gpg "ssh"]
+    # https://developer.1password.com/docs/ssh/git-commit-signing/
+    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[tag]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git/#listing-tags
+    sort = version:refname
