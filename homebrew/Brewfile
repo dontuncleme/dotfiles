@@ -9,6 +9,7 @@ brew "zoxide"
 brew "zsh"
 
 cask "1password"
+cask "adobe-creative-cloud"
 cask "anki"
 cask "brave-browser"
 cask "cleanshot"
