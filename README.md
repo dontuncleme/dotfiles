@@ -22,6 +22,14 @@ Run the installation script:
 ./install.sh
 ```
 
+## Updating
+
+To update all managed tools, configs, and symlinks after initial install, use:
+
+```bash
+./update.sh
+```
+
 ## Configuration Details
 
 ### Homebrew
