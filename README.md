@@ -6,6 +6,7 @@ This repository includes configuration for:
 - [OhMyZsh](https://ohmyz.sh/) - Framework for managing Zsh configuration
 - [Starship](https://starship.rs/) - Minimal, blazing-fast, and infinitely customizable prompt for any shell
 - [WezTerm](https://wezterm.org/) - GPU-accelerated cross-platform terminal emulator and multiplexer
+- [Claude Code](https://code.claude.com/docs) - Anthropic's CLI for Claude
 - [GitHub Copilot](https://github.com/features/copilot) - AI pair programming tool
 
 ## Installation
@@ -57,6 +58,10 @@ Terminal configuration in `.wezterm.lua` includes:
 ### Git Configuration
 
 The `install.sh` script symlinks `git/.gitconfig` to `~/.gitconfig`. This file contains global Git configurations.
+
+### Claude Code
+
+The `claude/CLAUDE.md` file is symlinked to `~/.claude/CLAUDE.md` and provides global instructions for Claude Code across all projects.
 
 ### GitHub Copilot
 
