@@ -21,6 +21,10 @@ curl -O https://raw.githubusercontent.com/dracula/wezterm/refs/heads/main/dracul
 # git config
 ln -sf $HOME/.dotfiles/git/.gitconfig $HOME
 
+# Claude
+mkdir -p $HOME/.claude
+ln -sf $HOME/.dotfiles/claude/CLAUDE.md $HOME/.claude/CLAUDE.md
+
 # GitHub Copilot
 mkdir -p $HOME/.github
 ln -sf $HOME/.dotfiles/github/copilot-instructions.md $HOME/.github/copilot-instructions.md
