@@ -1,59 +1,59 @@
 # CLAUDE.md
 
-In all interactions and commit messages, be extremely concise and sacrifice grammar for the sake of concision.
+## Response Format
+
+- Be extremely concise — sacrifice grammar for concision
+- No explanation of what you just did unless asked
+- No trailing summaries — the diff speaks for itself
+- Show diffs/edits, not full file reprints
+- No preamble ("Sure!", "Of course!", "Great question!")
+
+## Principles
+
+- **Simplicity first** — simplest correct solution wins
+- **Human-Readable** — clarity over cleverness
+- **Clean Code** — comments explain *why*, never *what*
+- **TDD** — new features start with a failing test
+- **No laziness** — find root causes; no temp hacks
+- **Minimal impact** — touch only what's necessary
+- **Linters own style** — never spend context on formatting
+- **No AI patterns** — code must look human-written. No verbose names like `isProcessingComplete`, no over-commented obvious logic, no defensive checks for impossible cases, no unnecessary abstractions, no boilerplate wrappers
+- **Respect existing code** — read before editing, match existing patterns, don't introduce new libraries/patterns when the codebase already has a way
+
+## Boundaries
+
+- Never auto-commit — only commit when explicitly asked
+- Never push without asking
+- Never refactor code not touched by the current task
+- Never add features beyond what was asked
+- When ambiguous, ask instead of guessing
+- If a task seems larger than expected, check before proceeding
+
+## Error Handling
+
+- Let errors propagate by default — don't catch unless you can do something useful
+- Catch at boundaries only — UI error boundaries, top-level API handlers for user feedback
+- Early return over try/catch nesting
+- Never silently swallow errors — no empty catch blocks
+
+## Git Conventions
+
+- Conventional Commits 1.0.0: `<type>[scope]: <description>`
+- Types: `feat`, `fix`, `refactor`, `chore`, `docs`, `test`, `perf`
+- Breaking changes: append `!` or add `BREAKING CHANGE:` footer
+- Subject line ≤72 chars, imperative mood
+- Keep PRs small and focused — one logical change per PR
+
+## Security
+
+- Never commit `.env`, credentials, or any file containing secrets
+- Never log sensitive data (tokens, passwords, PII)
+- Warn explicitly if asked to do either
 
 ## Plans
 
-At the end of each plan, give me a list of unresolved questions to answer, if any. Make the questions extremely concise. Sacrifice grammar for the sake of concision.
+At the end of each plan, give me a list of unresolved questions to answer, if any. Extremely concise.
 
-## Markdown Style Rules
+## Code Review After Edits
 
-When writing or editing **any** Markdown file (`.md`, `.mdx`), you MUST strictly follow the markdownlint rules from <https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md>
-
-### Core rules to enforce at all times
-
-#### Headings
-
-- MD001: Heading levels increment by one level only (no skipping from `#` to `###`)
-- MD003: Use consistent heading style — ATX style (`## Heading`) throughout
-- MD022: Headings must be surrounded by blank lines (before and after)
-- MD023: Headings must start at the beginning of the line (no indentation)
-- MD024: No duplicate heading text at the same level
-- MD025: Only one top-level `#` heading per document
-- MD026: No trailing punctuation in headings (no `.`, `!`, `:` at end)
-- MD041: First line must be a top-level `#` heading
-
-#### Lists
-
-- MD004: Use consistent unordered list marker (`-` preferred)
-- MD007: Unordered list indentation — 2 spaces per level
-- MD029: Ordered list items must use sequential numbers (1. 2. 3.)
-- MD030: One space after list markers
-- MD032: Lists must be surrounded by blank lines
-
-#### Code
-
-- MD031: Fenced code blocks must be surrounded by blank lines
-- MD040: Fenced code blocks must specify a language (e.g. ```python)
-
-#### Whitespace & formatting
-
-- MD009: No trailing spaces
-- MD010: No hard tabs — use spaces only
-- MD012: No multiple consecutive blank lines
-- MD027: No multiple spaces after blockquote `>` symbol
-
-#### Links & images
-
-- MD011: No reversed link syntax — correct: `[text](url)`, not `(text)[url]`
-- MD034: No bare URLs — always wrap in `<url>` or `[text](url)`
-- MD042: No empty links `[text]()`
-- MD045: Images must have alt text `![alt text](url)`
-
-#### Misc
-
-- MD033: No inline HTML unless explicitly required
-- MD036: Do not use emphasis (`**bold**`) as a substitute for a heading
-- MD037: No spaces inside emphasis markers (`**text**` not `** text **`)
-- MD038: No spaces inside code span backticks
-- MD039: No spaces inside link text brackets
+After completing edits, review the full file and suggest concrete improvements (duplication, readability, bugs, patterns, simplification, performance). Ranked by impact, one line per item. Include: unnecessary re-renders, missing memoization, redundant API calls, expensive computations in render path, missing cleanup.
