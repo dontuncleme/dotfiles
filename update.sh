@@ -45,6 +45,8 @@ fi
 if [ -f "$HOME/.dotfiles/claude/CLAUDE.md" ]; then
     mkdir -p "$HOME/.claude"
     ln -sf "$HOME/.dotfiles/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+    ln -sf "$HOME/.dotfiles/claude/settings.json" "$HOME/.claude/settings.json"
+    ln -sf "$HOME/.dotfiles/claude/statusline-command.sh" "$HOME/.claude/statusline-command.sh"
 fi
 
 # Update dotfiles repository

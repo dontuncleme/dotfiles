@@ -61,7 +61,11 @@ The `install.sh` script symlinks `git/.gitconfig` to `~/.gitconfig`. This file c
 
 ### Claude Code
 
-The `claude/CLAUDE.md` file is symlinked to `~/.claude/CLAUDE.md` and provides global instructions for Claude Code across all projects.
+- `CLAUDE.md` — global instructions, symlinked to `~/.claude/CLAUDE.md`
+- `settings.json` — model, enabled plugins, marketplace sources, statusline config
+- `statusline-command.sh` — custom status bar showing model, rate limits, context %
+
+On a fresh machine, plugins listed in `settings.json` may need manual install via `claude plugins install <name>` if Claude Code doesn't auto-install them.
 
 ### GitHub Copilot
 

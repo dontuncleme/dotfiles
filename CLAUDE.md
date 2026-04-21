@@ -23,6 +23,8 @@ Each tool gets its own directory with config files that get symlinked to their e
 | `wezterm/` | `.wezterm.lua` | `~/` |
 | `git/` | `.gitconfig` | `~/` |
 | `claude/` | `CLAUDE.md` | `~/.claude/CLAUDE.md` |
+| `claude/` | `settings.json` | `~/.claude/settings.json` |
+| `claude/` | `statusline-command.sh` | `~/.claude/statusline-command.sh` |
 | `github/` | `copilot-instructions.md` | `~/.github/` |
 
 ## Key details

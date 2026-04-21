@@ -56,4 +56,4 @@ At the end of each plan, give me a list of unresolved questions to answer, if an
 
 ## Code Review After Edits
 
-After completing edits, review the full file and suggest concrete improvements (duplication, readability, bugs, patterns, simplification, performance). Ranked by impact, one line per item. Include: unnecessary re-renders, missing memoization, redundant API calls, expensive computations in render path, missing cleanup.
+After completing edits, suggest (don't act) concrete improvements in the edited file: duplication, readability, bugs, patterns, simplification, performance, missing edge cases (null/empty/boundary), resource leaks (unclosed handles/connections/listeners), hardcoded values that should be constants. Ranked by impact, one line per item.
