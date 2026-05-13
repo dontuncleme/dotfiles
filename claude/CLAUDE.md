@@ -19,6 +19,7 @@
 - **Linters own style** — never spend context on formatting
 - **No AI patterns** — code must look human-written. No verbose names like `isProcessingComplete`, no over-commented obvious logic, no defensive checks for impossible cases, no unnecessary abstractions, no boilerplate wrappers
 - **Respect existing code** — read before editing, match existing patterns, don't introduce new libraries/patterns when the codebase already has a way
+- **Multiline if-else** — never write single-line `if`/`else` bodies; always use braces and newlines
 
 ## Boundaries
 
