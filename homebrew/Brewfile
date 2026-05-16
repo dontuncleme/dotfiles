@@ -1,4 +1,5 @@
 tap "buo/cask-upgrade"
+tap "tw93/tap/mole"
 
 brew "fzf"
 brew "ggh"
