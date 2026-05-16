@@ -7,22 +7,27 @@ brew bundle --file=./homebrew/Brewfile
 
 # OhMyZsh
 chsh -s /bin/zsh
-ln -sf $HOME/.dotfiles/zsh/.zshrc $HOME
+ln -sf "$HOME/.dotfiles/zsh/.zshrc" "$HOME"
 
 # Starship
-mkdir -p $HOME/.config
-ln -sf $HOME/.dotfiles/starship/starship.toml $HOME/.config
+mkdir -p "$HOME/.config"
+ln -sf "$HOME/.dotfiles/starship/starship.toml" "$HOME/.config"
 
 # WezTerm
-mkdir -p $HOME/.config/wezterm/colors
-cd $HOME/.config/wezterm/colors/
+mkdir -p "$HOME/.config/wezterm/colors"
+cd "$HOME/.config/wezterm/colors/"
 curl -O https://raw.githubusercontent.com/dracula/wezterm/refs/heads/main/dracula.toml
+ln -sf "$HOME/.dotfiles/wezterm/.wezterm.lua" "$HOME"
 
 # git config
-ln -sf $HOME/.dotfiles/git/.gitconfig $HOME
+ln -sf "$HOME/.dotfiles/git/.gitconfig" "$HOME"
+
+# Claude
+mkdir -p "$HOME/.claude"
+ln -sf "$HOME/.dotfiles/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+ln -sf "$HOME/.dotfiles/claude/settings.json" "$HOME/.claude/settings.json"
+ln -sf "$HOME/.dotfiles/claude/statusline-command.sh" "$HOME/.claude/statusline-command.sh"
 
 # GitHub Copilot
-mkdir -p $HOME/.github
-ln -sf $HOME/.dotfiles/github/copilot-instructions.md $HOME/.github/copilot-instructions.md
-
-ln -sf $HOME/.dotfiles/wezterm/.wezterm.lua $HOME
+mkdir -p "$HOME/.github"
+ln -sf "$HOME/.dotfiles/github/copilot-instructions.md" "$HOME/.github/copilot-instructions.md"
