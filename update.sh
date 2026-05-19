@@ -47,6 +47,9 @@ if [ -f "$HOME/.dotfiles/claude/CLAUDE.md" ]; then
     ln -sf "$HOME/.dotfiles/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
     ln -sf "$HOME/.dotfiles/claude/settings.json" "$HOME/.claude/settings.json"
     ln -sf "$HOME/.dotfiles/claude/statusline-command.sh" "$HOME/.claude/statusline-command.sh"
+    rm -rf "$HOME/.claude/skills" "$HOME/.claude/commands"
+    ln -sfn "$HOME/.dotfiles/claude/skills" "$HOME/.claude/skills"
+    ln -sfn "$HOME/.dotfiles/claude/commands" "$HOME/.claude/commands"
 fi
 
 # Update dotfiles repository
