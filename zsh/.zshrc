@@ -68,6 +68,3 @@ alias c='clear'
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
-# zoxide
-_ZO_DOCTOR=0
