@@ -1,11 +1,13 @@
 tap "buo/cask-upgrade"
 tap "tw93/tap/mole"
+tap "xykong/tap"
 
 brew "fzf"
 brew "ggh"
 brew "mas"
 brew "nvm"
 brew "starship"
+brew "xykong/tap/flux-markdown"
 brew "zoxide"
 brew "zsh"
 
