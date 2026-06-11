@@ -11,15 +11,32 @@
 ## Principles
 
 - **Simplicity first** — simplest correct solution wins
-- **Human-Readable** — clarity over cleverness
-- **Clean Code** — comments explain *why*, never *what*
-- **TDD** — new features start with a failing test
+- **TDD** — where a test framework exists, new features start with a failing test
 - **No laziness** — find root causes; no temp hacks
 - **Minimal impact** — touch only what's necessary
 - **Linters own style** — never spend context on formatting
-- **No AI patterns** — code must look human-written. No verbose names like `isProcessingComplete`, no over-commented obvious logic, no defensive checks for impossible cases, no unnecessary abstractions, no boilerplate wrappers
+- **No AI patterns** — code must look human-written. No defensive checks for impossible cases, no unnecessary abstractions, no boilerplate wrappers
 - **Respect existing code** — read before editing, match existing patterns, don't introduce new libraries/patterns when the codebase already has a way
 - **Multiline if-else** — never write single-line `if`/`else` bodies; always use braces and newlines
+
+## Comments
+
+- Comment sparingly — only where intent isn't obvious from the code
+- No restating what the code says (`// increment i`)
+- No section banners, no docstrings on self-evident functions
+- Write like a teammate leaving a note, not documentation — terse, lowercase ok, no ceremony
+- Leave a comment only for the *why*: tradeoffs, gotchas, non-obvious constraints
+- Match the tone/density of comments already in the file
+
+## Code Style
+
+- Write for the next human reading it, not for the machine
+- Names say intent in plain words — short, real words, no `tmp2`/`dataObj`/`handlerFn`
+- One thing per function; if it needs a "and" to describe, split it
+- Flat over nested — early returns, no deep pyramids
+- No clever one-liners that need a second read; boring and obvious wins
+- Consistent with the file's existing style over personal preference
+- Small functions over comments explaining a big one
 
 ## Boundaries
 
@@ -30,12 +47,24 @@
 - When ambiguous, ask instead of guessing
 - If a task seems larger than expected, check before proceeding
 
+## Files
+
+- Prefer editing existing files over creating new ones
+- No unsolicited docs/README/scripts — only what was asked
+- Ask before adding a new dependency
+
 ## Error Handling
 
 - Let errors propagate by default — don't catch unless you can do something useful
 - Catch at boundaries only — UI error boundaries, top-level API handlers for user feedback
 - Early return over try/catch nesting
 - Never silently swallow errors — no empty catch blocks
+
+## Verification
+
+- Never claim done/fixed/passing without running it and seeing output
+- Evidence before assertions — quote the result, don't assume
+- Never weaken, skip, or delete a test to make it pass — fix the code
 
 ## Git Conventions
 

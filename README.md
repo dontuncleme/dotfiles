@@ -3,7 +3,7 @@
 This repository includes configuration for:
 
 - [Homebrew](https://brew.sh/) - Package manager for macOS
-- [OhMyZsh](https://ohmyz.sh/) - Framework for managing Zsh configuration
+- [zinit](https://github.com/zdharma-continuum/zinit) - Flexible Zsh plugin manager (loads OhMyZsh snippets)
 - [Starship](https://starship.rs/) - Minimal, blazing-fast, and infinitely customizable prompt for any shell
 - [WezTerm](https://wezterm.org/) - GPU-accelerated cross-platform terminal emulator and multiplexer
 - [Claude Code](https://code.claude.com/docs) - Anthropic's CLI for Claude
@@ -41,8 +41,8 @@ The `Brewfile` in the `homebrew/` directory contains all the packages, casks, an
 
 The dotfiles include:
 
-- `.zshrc` - Main Zsh configuration file
-- `.private.zsh` - Private configuration (not tracked in git)
+- `.zshrc` - Main Zsh configuration; uses [zinit](https://github.com/zdharma-continuum/zinit) for plugins and OhMyZsh (OMZL/OMZP) snippets
+- `.private.zsh` - Private configuration (not tracked in git; template in `.private.zsh.default`)
 
 ### Starship
 
@@ -64,6 +64,7 @@ The `install.sh` script symlinks `git/.gitconfig` to `~/.gitconfig`. This file c
 - `CLAUDE.md` — global instructions, symlinked to `~/.claude/CLAUDE.md`
 - `settings.json` — model, enabled plugins, marketplace sources, statusline config
 - `statusline-command.sh` — custom status bar showing model, rate limits, context %
+- `skills/`, `commands/` — directory symlinks so repo skills/commands show up in `~/.claude`
 
 On a fresh machine, plugins listed in `settings.json` may need manual install via `claude plugins install <name>` if Claude Code doesn't auto-install them.
 
