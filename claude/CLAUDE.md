@@ -27,6 +27,20 @@
 - Write like a teammate leaving a note, not documentation — terse, lowercase ok, no ceremony
 - Leave a comment only for the *why*: tradeoffs, gotchas, non-obvious constraints
 - Match the tone/density of comments already in the file
+- Keep comments short — one line when possible; if it spans multiple lines, rewrite shorter
+
+## No AI Tells
+
+Applies to comments, commits, PRs, docs, and prose. Goal: text reads human-written.
+
+- **Punctuation**: no em-dash (`—`); use hyphen, comma, or parens. No semicolons in prose; split or use a comma.
+- **No emoji** in code, comments, or commits.
+- **Filler words** banned: leverage, utilize, robust, seamless, comprehensive, crucial, vital, essential, pivotal. Use plain words: use, strong, smooth, key.
+- **Empty phrasings** banned: "not just X, it's Y", "it's worth noting", "it's important to note", "at its core", "delve into".
+- **No stacked transitions** at sentence starts: Moreover, Furthermore, Additionally, Notably.
+- **No filler closers**: "In summary", "Let me know if...", "I hope this helps".
+- **No rhetorical questions** in comments ("But what does this mean?").
+- Vary sentence length; avoid mechanical tricolons and identically-shaped list items.
 
 ## Code Style
 
