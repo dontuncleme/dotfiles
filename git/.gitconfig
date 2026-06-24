@@ -5,8 +5,8 @@
 [branch]
     # https://blog.gitbutler.com/git-tips-2-new-stuff-in-git/#some-git-branch-stuff
     sort = -committerdate
-[color]
-    ui = true
+[column]
+    ui = auto
 [core]
     ignorecase = false
 [diff]
@@ -19,9 +19,30 @@
 [init]
     # https://blog.gitbutler.com/how-git-core-devs-configure-git/#default-branch
     defaultBranch = trunk
+[merge]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git#better-merge-conflicts
+    # (just 'diff3' if git version < 2.3)
+    conflictstyle = zdiff3
 [gpg "ssh"]
     # https://developer.1password.com/docs/ssh/git-commit-signing/
     program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[pull]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git#better-pulling
+    rebase = true
+[push]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git#better-pushing
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+[rebase]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git#slightly-nicer-rebase
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+[rerere]
+    # https://blog.gitbutler.com/how-git-core-devs-configure-git#reuse-recorded-resolutions
+    enabled = true
+    autoupdate = true
 [tag]
     # https://blog.gitbutler.com/how-git-core-devs-configure-git/#listing-tags
     sort = version:refname
