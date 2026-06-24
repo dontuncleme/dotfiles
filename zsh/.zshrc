@@ -26,6 +26,7 @@ zinit light junegunn/fzf-git.sh
 # snippets
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
+zinit snippet OMZP::gh
 zinit snippet OMZP::npm
 zinit snippet OMZP::brew
 zinit snippet OMZP::command-not-found

@@ -4,6 +4,7 @@ tap "xykong/tap"
 
 brew "fzf"
 brew "ggh"
+brew "gh"
 brew "mas"
 brew "nvm"
 brew "starship"
