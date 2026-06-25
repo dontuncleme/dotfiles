@@ -29,9 +29,10 @@ ln -sf "$HOME/.dotfiles/claude/settings.json" "$HOME/.claude/settings.json"
 ln -sf "$HOME/.dotfiles/claude/statusline-command.sh" "$HOME/.claude/statusline-command.sh"
 # Skills and commands: dir symlinks so anything in the repo shows up in ~/.claude.
 # Plugins themselves restore from settings.json (enabledPlugins + extraKnownMarketplaces) on first launch.
-rm -rf "$HOME/.claude/skills" "$HOME/.claude/commands"
+rm -rf "$HOME/.claude/skills" "$HOME/.claude/commands" "$HOME/.claude/rules"
 ln -sfn "$HOME/.dotfiles/claude/skills" "$HOME/.claude/skills"
 ln -sfn "$HOME/.dotfiles/claude/commands" "$HOME/.claude/commands"
+ln -sfn "$HOME/.dotfiles/claude/rules" "$HOME/.claude/rules"
 
 # GitHub Copilot
 mkdir -p "$HOME/.github"

@@ -27,6 +27,7 @@ Each tool gets its own directory with config files that get symlinked to their e
 | `claude/` | `statusline-command.sh` | `~/.claude/statusline-command.sh` |
 | `claude/skills/` | (dir) | `~/.claude/skills/` |
 | `claude/commands/` | (dir) | `~/.claude/commands/` |
+| `claude/rules/` | (dir) | `~/.claude/rules/` |
 | `github/` | `copilot-instructions.md` | `~/.github/` |
 
 ## Key details

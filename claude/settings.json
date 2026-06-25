@@ -1,26 +1,64 @@
 {
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  },
   "statusLine": {
     "type": "command",
     "command": "sh $HOME/.claude/statusline-command.sh"
   },
+  "permissions": {
+    "allow": [
+      "Bash(rtk gain:*)",
+      "Bash(rtk discover:*)",
+      "Bash(rtk --version)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(fd:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(which:*)",
+      "Bash(brew list:*)",
+      "Bash(brew info:*)"
+    ]
+  },
   "enabledPlugins": {
-    "frontend-design@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
-    "feature-dev@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
-    "security-guidance@claude-plugins-official": true,
     "caveman@caveman": true,
     "superpowers@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true,
-    "claude-md-management@claude-plugins-official": true,
-    "playwright@claude-plugins-official": true
+    "playwright@claude-plugins-official": true,
+    "andrej-karpathy-skills@karpathy-skills": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
       "source": {
         "source": "github",
         "repo": "JuliusBrussee/caveman"
+      }
+    },
+    "karpathy-skills": {
+      "source": {
+        "source": "github",
+        "repo": "multica-ai/andrej-karpathy-skills"
       }
     }
   },
