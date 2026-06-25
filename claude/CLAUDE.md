@@ -21,6 +21,8 @@
 
 ## Comments
 
+- Default to NO comment. Add one only when the code's intent stays unclear after a careful read — err on the side of fewer
+- One comment per non-obvious thing; never explain the same point in both the code and a test name
 - Comment sparingly — only where intent isn't obvious from the code
 - No restating what the code says (`// increment i`)
 - No section banners, no docstrings on self-evident functions
@@ -101,3 +103,5 @@ At the end of each plan, give me a list of unresolved questions to answer, if an
 ## Code Review After Edits
 
 After completing edits, suggest (don't act) concrete improvements in the edited file: duplication, readability, bugs, patterns, simplification, performance, missing edge cases (null/empty/boundary), resource leaks (unclosed handles/connections/listeners), hardcoded values that should be constants. Ranked by impact, one line per item.
+
+@RTK.md
