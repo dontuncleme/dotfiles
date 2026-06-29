@@ -12,6 +12,7 @@ Loaded only when editing source files. Cross-cutting policy lives in `~/.claude/
 - Default to NO comment; add one only for the *why* (tradeoffs, gotchas, non-obvious constraints), never to restate code (`// increment i`)
 - No docstrings on self-evident functions, no section banners; never explain the same point in both the code and a test name
 - Match the tone/density of comments already in the file; keep them short, one line when possible
+- Mark a deliberate shortcut with a comment naming its ceiling and upgrade path (e.g. global lock, O(n^2) scan, naive heuristic)
 
 ## Code Style
 
@@ -22,6 +23,10 @@ Loaded only when editing source files. Cross-cutting policy lives in `~/.claude/
 - No clever one-liners that need a second read; boring and obvious wins
 - Small functions over comments explaining a big one
 - No AI patterns: code must look human-written; no defensive checks for impossible cases, no unnecessary abstractions, no boilerplate wrappers
+
+## Bug Fixes
+
+- Fix the shared function once: grep all callers and fix the common point; patching only the path the ticket names leaves sibling callers broken
 
 ## Error Handling
 

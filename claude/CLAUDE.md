@@ -22,6 +22,9 @@ Governs chat replies. For committed text (code, comments, commits, PRs, docs) se
 - **Minimal impact** - touch only what's necessary
 - **Linters own style** - never spend context on formatting
 - **Respect existing code** - read before editing, match existing patterns, don't introduce new libraries/patterns when the codebase already has a way
+- **Reuse ladder** - before writing, climb and stop at the first that holds: already in this codebase? then stdlib? then native feature? then an already-installed dep? only then write the minimum
+- **Deletion over addition** - prefer removing code to adding it; fewest files
+- **Minimalism has limits** - never skimp on trust-boundary validation, security, error handling that prevents data loss, accessibility, or anything explicitly asked
 
 ## No AI Tells
 
