@@ -45,7 +45,7 @@ Applies to anything a human reads: code, comments, commits, PRs, docs, prose. Go
 - Never push without asking
 - Never refactor code not touched by the current task
 - Never add features beyond what was asked
-- When ambiguous, ask instead of guessing
+- When ambiguous, ask instead of guessing; if running unattended, pick the conservative option and flag it in output
 - If a task seems larger than expected, check before proceeding
 
 ## Files
@@ -59,11 +59,13 @@ Applies to anything a human reads: code, comments, commits, PRs, docs, prose. Go
 - Never claim done/fixed/passing without running it and seeing output
 - Evidence before assertions - quote the result, don't assume
 - Never weaken, skip, or delete a test to make it pass - fix the code
+- When verification fails, report the failure with output - don't retry silently or claim partial success
 
 ## Git Conventions
 
 - Conventional Commits 1.0.0: `<type>[scope]: <description>`
 - Types: `feat`, `fix`, `refactor`, `chore`, `docs`, `test`, `perf`
+- `feat` is for user-facing features only - docs/config/tooling changes are `docs` or `chore`
 - Breaking changes: append `!` or add `BREAKING CHANGE:` footer
 - Subject line ≤72 chars, imperative mood
 - Keep PRs small and focused - one logical change per PR

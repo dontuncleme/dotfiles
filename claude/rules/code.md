@@ -1,11 +1,6 @@
----
-paths:
-  - "**/*.{js,jsx,ts,tsx,mjs,cjs,py,go,rs,rb,java,kt,kts,swift,c,cc,cpp,h,hpp,m,mm,sh,bash,zsh,lua,php,vue,svelte,scala,cs,sql}"
----
-
 # Code rules
 
-Loaded only when editing source files. Cross-cutting policy lives in `~/.claude/CLAUDE.md`.
+Applies when writing or editing source code. Cross-cutting policy lives in `~/.claude/CLAUDE.md`.
 
 ## Comments
 

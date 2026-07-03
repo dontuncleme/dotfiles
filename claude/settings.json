@@ -21,8 +21,7 @@
       "Bash(which:*)",
       "Bash(brew list:*)",
       "Bash(brew info:*)"
-    ],
-    "defaultMode": "plan"
+    ]
   },
   "hooks": {
     "PreToolUse": [
@@ -64,6 +63,6 @@
     }
   },
   "effortLevel": "high",
-  "theme": "dark-ansi",
-  "tui": "fullscreen"
+  "tui": "fullscreen",
+  "theme": "dark-ansi"
 }
