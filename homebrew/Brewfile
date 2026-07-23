@@ -1,6 +1,7 @@
 tap "tw93/tap/mole"
 tap "xykong/tap"
 
+brew "btop"
 brew "fzf"
 brew "ggh"
 brew "gh"
