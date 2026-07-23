@@ -6,6 +6,9 @@ export NVM_DIR="$HOME/.nvm"
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# 1Password SSH agent
+export SSH_AUTH_SOCK="$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
 # zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
