@@ -1,0 +1,17 @@
+# Personal identity. Copy to config-personal.inc and fill in.
+# signingkey and the sshCommand key are 1Password SSH public keys.
+# See the Git Configuration section in README.md for the 1Password setup.
+# [user]
+#     name = Your Name
+#     email = you@personal.example
+#     signingkey = ssh-ed25519 AAAA...
+# Pin the auth key so this folder never offers the work key.
+# The .pub must exist on disk (export it from 1Password).
+# [core]
+#     sshCommand = ssh -o IdentitiesOnly=yes -i ~/.ssh/github-personal.pub
+# [gpg]
+#     format = ssh
+# [gpg "ssh"]
+#     program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+# [commit]
+#     gpgsign = true

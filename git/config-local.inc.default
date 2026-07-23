@@ -1,0 +1,5 @@
+# Machine-specific identity routing. Copy to config-local.inc and edit the folders.
+# [includeIf "gitdir:~/personal/"]
+#    path = ~/.dotfiles/git/config-personal.inc
+# [includeIf "gitdir:~/work/"]
+#    path = ~/.dotfiles/git/config-work.inc

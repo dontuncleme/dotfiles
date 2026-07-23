@@ -1,3 +1,7 @@
 .DS_Store
 
 .private.zsh
+
+git/config-personal.inc
+git/config-work.inc
+git/config-local.inc

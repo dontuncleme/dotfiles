@@ -33,6 +33,7 @@ Each tool gets its own directory with config files that get symlinked to their e
 ## Key details
 
 - `zsh/.private.zsh` is gitignored — private env vars/secrets go there (`.private.zsh.default` is the template)
+- Git identity is gitignored: `.gitconfig` unconditionally includes `git/config-local.inc` (per-folder `includeIf` rules), which points to `git/config-personal.inc` / `git/config-work.inc`. Each has a `.default` template to copy and fill on a new machine
 - Zsh plugin manager is zinit (not OhMyZsh directly), but loads OMZL/OMZP snippets
 - WezTerm uses Dracula theme downloaded at install time (not vendored)
 - Claude plugins restore from `settings.json` (`enabledPlugins` + `extraKnownMarketplaces`) on first launch — not vendored

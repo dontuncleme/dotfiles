@@ -46,3 +46,7 @@
 [tag]
     # https://blog.gitbutler.com/how-git-core-devs-configure-git/#listing-tags
     sort = version:refname
+[include]
+    # Local, machine-specific includeIf conditions (gitignored). See config-local.inc.default
+    path = ~/.dotfiles/git/config-local.inc
+    
