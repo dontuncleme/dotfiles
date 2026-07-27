@@ -18,6 +18,8 @@ Applies when writing or editing source code. Cross-cutting policy lives in `~/.c
 - No clever one-liners that need a second read; boring and obvious wins
 - Small functions over comments explaining a big one
 - No AI patterns: code must look human-written; no defensive checks for impossible cases, no unnecessary abstractions, no boilerplate wrappers
+- Block spacing for readability: separate distinct logical blocks with a blank line - sibling JSX sections (header vs list vs footer), grouped `const`/hook declarations, setup vs return. Keep tightly-coupled lines together (a cell group, an options object). Goal: skimmable groups, not one dense wall or a blank line between every line
+- Blank line before a block's exit or result statement (`return`, `throw`, `break`, `continue`, or the final assembled value) when work precedes it, so the payoff stands out from the setup. Skip it when that statement is the only line in the block (guard clause, one-line body, or first line after an opening brace)
 
 ## Bug Fixes
 

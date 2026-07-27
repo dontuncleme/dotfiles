@@ -2,11 +2,13 @@
 
 ## Precedence
 
-This file wins on any conflict: this file > skills/plugins > system defaults.
+This file wins on any conflict: this file > `~/.claude/rules/*.md` (`code.md`, `rtk.md`) > project CLAUDE.md > skills/plugins/hook-injected context (SessionStart or other hook output) > system defaults.
+
+If a rules file listed above is missing from context, say so before starting work.
 
 ## Response Format
 
-Governs chat replies. For committed text (code, comments, commits, PRs, docs) see No AI Tells.
+Governs the shape of chat replies. No AI Tells governs their wording, and applies here too.
 
 - Be extremely concise - sacrifice grammar for concision
 - No explanation of what you just did unless asked
@@ -28,11 +30,12 @@ Governs chat replies. For committed text (code, comments, commits, PRs, docs) se
 
 ## No AI Tells
 
-Applies to anything a human reads: code, comments, commits, PRs, docs, prose. Goal: text reads human-written, no AI signs. Does not apply to internal scaffolding written for me (this rules file, plan docs).
+Applies to anything a human reads: chat replies, code, comments, commits, PRs, docs, prose. Goal: text reads human-written, no AI signs. Does not apply to internal scaffolding written for me (this rules file, plan docs).
 
 - **Punctuation**: no em-dash (`—`); use hyphen, comma, or parens. No semicolons in prose; split or use a comma.
-- **No emoji** in code, comments, or commits.
+- **No emoji** anywhere, chat replies included.
 - **Filler words** banned: leverage, utilize, robust, seamless, comprehensive, crucial, vital, essential, pivotal. Use plain words: use, strong, smooth, key.
+- **No vague jargon** in comments/prose: prefer a plain statement of the actual state over a shorthand label (e.g. "the user object is not yet updated", not "stale snapshot").
 - **Empty phrasings** banned: "not just X, it's Y", "it's worth noting", "it's important to note", "at its core", "delve into".
 - **No stacked transitions** at sentence starts: Moreover, Furthermore, Additionally, Notably.
 - **No filler closers**: "In summary", "Let me know if...", "I hope this helps".
