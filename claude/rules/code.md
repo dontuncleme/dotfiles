@@ -5,9 +5,12 @@ Applies when writing or editing source code. Cross-cutting policy lives in `~/.c
 ## Comments
 
 - Default to NO comment; add one only for the *why* (tradeoffs, gotchas, non-obvious constraints), never to restate code (`// increment i`)
+- Before finishing, reread every comment you added and delete the ones a reader could work out from the code. Keeping two good ones beats keeping six
+- Write them in plain English, the way you would explain it to the colleague reading this next. No note-to-self shorthand, no noun-stacked jargon where a plain sentence works, no restating the call below in other words
 - No docstrings on self-evident functions, no section banners; never explain the same point in both the code and a test name
 - Match the tone/density of comments already in the file; keep them short, one line when possible
 - Mark a deliberate shortcut with a comment naming its ceiling and upgrade path (e.g. global lock, O(n^2) scan, naive heuristic)
+- When you change what code does, fix the comment or doc describing it in the same edit - a stale description is worse than none
 
 ## Code Style
 
@@ -31,3 +34,4 @@ Applies when writing or editing source code. Cross-cutting policy lives in `~/.c
 - Catch at boundaries only - UI error boundaries, top-level API handlers for user feedback
 - Early return over try/catch nesting
 - Never silently swallow errors - no empty catch blocks
+- No fallback that masks a failure - no symptom-masking guard, no silent recovery, unless asked
