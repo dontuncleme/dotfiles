@@ -35,12 +35,6 @@ if [ -f "$HOME/.dotfiles/git/.gitconfig" ]; then
     ln -sf "$HOME/.dotfiles/git/.gitconfig" "$HOME"
 fi
 
-# GitHub Copilot
-if [ -f "$HOME/.dotfiles/github/copilot-instructions.md" ]; then
-    mkdir -p "$HOME/.github"
-    ln -sf "$HOME/.dotfiles/github/copilot-instructions.md" "$HOME/.github/copilot-instructions.md"
-fi
-
 # Claude
 if [ -f "$HOME/.dotfiles/claude/CLAUDE.md" ]; then
     mkdir -p "$HOME/.claude"

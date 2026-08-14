@@ -7,7 +7,6 @@ This repository includes configuration for:
 - [Starship](https://starship.rs/) - Minimal, blazing-fast, and infinitely customizable prompt for any shell
 - [WezTerm](https://wezterm.org/) - GPU-accelerated cross-platform terminal emulator and multiplexer
 - [Claude Code](https://code.claude.com/docs) - Anthropic's CLI for Claude
-- [GitHub Copilot](https://github.com/features/copilot) - AI pair programming tool
 
 ## Installation
 
@@ -104,17 +103,3 @@ pbcopy < ~/.ssh/github-personal.pub
 - `skills/`, `commands/` - directory symlinks so repo skills/commands show up in `~/.claude`
 
 On a fresh machine, plugins listed in `settings.json` may need manual install via `claude plugins install <name>` if Claude Code doesn't auto-install them.
-
-### GitHub Copilot
-
-Contains [custom instructions](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) for GitHub Copilot in `github/copilot-instructions.md`.
-
-To set up GitHub Copilot with these configurations, add the following to your VS Code `settings.json`:
-
-```json
-{
-  "chat.instructionsFilesLocations": {
-    "~/.github/copilot-instructions.md": true
-  }
-}
-```

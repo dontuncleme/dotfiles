@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-macOS dotfiles repo. Configs for Homebrew, Zsh (zinit + OhMyZsh snippets), Starship prompt, WezTerm terminal, Git, Claude, and GitHub Copilot. All managed via symlinks.
+macOS dotfiles repo. Configs for Homebrew, Zsh (zinit + OhMyZsh snippets), Starship prompt, WezTerm terminal, Git, and Claude. All managed via symlinks.
 
 ## Commands
 
@@ -28,7 +28,6 @@ Each tool gets its own directory with config files that get symlinked to their e
 | `claude/skills/` | (dir) | `~/.claude/skills/` |
 | `claude/commands/` | (dir) | `~/.claude/commands/` |
 | `claude/rules/` | (dir) | `~/.claude/rules/` |
-| `github/` | `copilot-instructions.md` | `~/.github/` |
 
 ## Key details
 

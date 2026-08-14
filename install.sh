@@ -33,7 +33,3 @@ rm -rf "$HOME/.claude/skills" "$HOME/.claude/commands" "$HOME/.claude/rules"
 ln -sfn "$HOME/.dotfiles/claude/skills" "$HOME/.claude/skills"
 ln -sfn "$HOME/.dotfiles/claude/commands" "$HOME/.claude/commands"
 ln -sfn "$HOME/.dotfiles/claude/rules" "$HOME/.claude/rules"
-
-# GitHub Copilot
-mkdir -p "$HOME/.github"
-ln -sf "$HOME/.dotfiles/github/copilot-instructions.md" "$HOME/.github/copilot-instructions.md"
