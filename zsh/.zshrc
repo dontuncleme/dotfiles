@@ -65,6 +65,25 @@ alias oo="open ."
 alias ls='ls --color'
 alias c='clear'
 
+# gbc: delete local branches already merged into origin/develop
+alias gbc="git fetch --prune origin && git branch --merged origin/develop | grep -vE '^\*' | grep -vE '^[[:space:]]*(develop|master|main)$' | grep -vE '^[[:space:]]*release' | xargs -r git branch -d"
+
+# gbcr: same on the shared remote. -n lists without deleting, otherwise it asks first
+gbcr() {
+	local branches
+	git fetch --prune origin || return 1
+	branches=$(git branch -r --merged origin/develop --format='%(refname:short)' | sed 's|^origin/||' | grep -vE '^(origin|HEAD|develop|master|main)$' | grep -vE '^release')
+	if [ -z "$branches" ]; then
+		echo "Nothing merged to delete"
+		return 0
+	fi
+	echo "$branches"
+	[ "$1" = -n ] && return 0
+	echo
+	read "reply?Delete these ${#${(f)branches}} branches on origin? [y/N] "
+	[ "$reply" = y ] && echo "$branches" | xargs -r git push origin --delete
+}
+
 # private
 [ -f $HOME/.private.zsh ] && source $HOME/.private.zsh
 
