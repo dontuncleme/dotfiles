@@ -5,3 +5,5 @@
 git/config-personal.inc
 git/config-work.inc
 git/config-local.inc
+
+claude/*/synced/

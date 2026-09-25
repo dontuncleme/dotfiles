@@ -84,5 +84,6 @@
   },
   "effortLevel": "high",
   "tui": "fullscreen",
-  "theme": "dark-ansi"
+  "theme": "dark-ansi",
+  "awaySummaryEnabled": false
 }

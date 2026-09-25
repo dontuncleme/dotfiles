@@ -9,6 +9,7 @@
     ui = auto
 [core]
     ignorecase = false
+    editor = code --wait --reuse-window
 [diff]
     # https://blog.gitbutler.com/how-git-core-devs-configure-git/#better-diff
     algorithm = histogram
@@ -49,4 +50,5 @@
 [include]
     # Local, machine-specific includeIf conditions (gitignored). See config-local.inc.default
     path = ~/.dotfiles/git/config-local.inc
-    
+[sequence]
+    editor = code --wait --reuse-window
