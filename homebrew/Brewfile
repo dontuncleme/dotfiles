@@ -1,4 +1,5 @@
 tap "tw93/tap/mole"
+tap "xykong/tap"
 
 brew "btop"
 brew "fzf"
@@ -8,6 +9,7 @@ brew "mas"
 brew "nvm"
 brew "rtk"
 brew "starship"
+brew "xykong/tap/flux-markdown"
 brew "zoxide"
 brew "zsh"
 
