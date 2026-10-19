@@ -1,1 +1,0 @@
-Rules reminder: extreme concision, no AI tells (chat included), no auto-commit or push, evidence before done claims, minimal diff.

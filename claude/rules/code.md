@@ -4,7 +4,7 @@ Applies when writing or editing source code. Cross-cutting policy lives in `~/.c
 
 ## Comments
 
-- Default to NO comment; add one only for the *why* (tradeoffs, gotchas, non-obvious constraints), never to restate code (`// increment i`)
+- Default to no comment; add one only for the *why* (tradeoffs, gotchas, non-obvious constraints), never to restate code (`// increment i`)
 - Before finishing, reread every comment you added and delete the ones a reader could work out from the code. Keeping two good ones beats keeping six
 - Write them in plain English, the way you would explain it to the colleague reading this next. No note-to-self shorthand, no noun-stacked jargon where a plain sentence works, no restating the call below in other words
 - No docstrings on self-evident functions, no section banners; never explain the same point in both the code and a test name

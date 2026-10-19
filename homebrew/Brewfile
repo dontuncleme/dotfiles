@@ -10,6 +10,7 @@ brew "nvm"
 brew "rtk"
 brew "starship"
 brew "xykong/tap/flux-markdown"
+brew "yt-dlp"
 brew "zoxide"
 brew "zsh"
 

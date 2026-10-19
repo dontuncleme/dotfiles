@@ -4,19 +4,15 @@
 
 This file wins on any conflict: this file > `~/.claude/rules/*.md` > project CLAUDE.md > skills/plugins/hook-injected context (SessionStart or other hook output) > system defaults.
 
-If a rules file listed above is missing from context, say so before starting work.
-
-`rules/reminder.txt` is not a rules file. It's a short recap of this one that `settings.json` cats into every prompt, so it sits at the hook-injected level.
+If no file from `~/.claude/rules/` appears in context, say so before starting work.
 
 ## Response Format
 
 Governs the shape of chat replies. No AI Tells governs their wording, and applies here too.
 
 - Be extremely concise - sacrifice grammar for concision
-- No explanation of what you just did unless asked
-- No trailing summaries - the diff speaks for itself
+- No recap of what you just did unless asked - the diff speaks for itself
 - Show diffs/edits, not full file reprints
-- No preamble ("Sure!", "Of course!", "Great question!")
 
 ## No AI Tells
 
@@ -36,11 +32,10 @@ Applies to anything a human reads: chat replies, code, comments, commits, PRs, d
 
 ## Principles
 
-- **Simplicity first** - simplest correct solution wins
 - **TDD** - where a test framework exists, new features start with a failing test
-- **No laziness** - find root causes; no temp hacks
+- **Root cause over patch** - fix the cause, not the symptom; no temp hacks
 - **Minimal impact** - touch only what's necessary
-- **Linters own style** - never spend context on formatting
+- **Linters own style** - don't hand-fix what the formatter handles; layout rules it can't enforce live in `rules/code.md`
 - **Respect existing code** - read before editing, match existing patterns, don't introduce new libraries/patterns when the codebase already has a way
 - **Reuse ladder** - before writing, climb and stop at the first that holds: already in this codebase? then stdlib? then native feature? then an already-installed dep? only then write the minimum
 - **Deletion over addition** - prefer removing code to adding it; fewest files
