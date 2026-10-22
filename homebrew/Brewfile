@@ -1,6 +1,7 @@
 tap "tw93/tap/mole"
 tap "xykong/tap"
 
+brew "aria2"
 brew "btop"
 brew "fzf"
 brew "ggh"
@@ -15,7 +16,6 @@ brew "zoxide"
 brew "zsh"
 
 cask "1password"
-cask "claude-code"
 cask "cleanshot"
 cask "firefox"
 cask "font-fira-code"

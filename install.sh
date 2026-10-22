@@ -23,6 +23,7 @@ ln -sf "$HOME/.dotfiles/wezterm/.wezterm.lua" "$HOME"
 ln -sf "$HOME/.dotfiles/git/.gitconfig" "$HOME"
 
 # Claude
+curl -fsSL https://claude.ai/install.sh | bash
 mkdir -p "$HOME/.claude"
 ln -sf "$HOME/.dotfiles/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
 ln -sf "$HOME/.dotfiles/claude/settings.json" "$HOME/.claude/settings.json"
