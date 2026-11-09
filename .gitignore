@@ -6,6 +6,5 @@ git/config-personal.inc
 git/config-work.inc
 git/config-local.inc
 
+claude/skills/
 claude/*/.trash/
-claude/*/learned/
-claude/*/synced/

@@ -65,14 +65,32 @@ alias oo="open ."
 alias ls='ls --color'
 alias c='clear'
 
-# gbc: delete local branches already merged into origin/develop
-alias gbc="git fetch --prune origin && git branch --merged origin/develop | grep -vE '^\*' | grep -vE '^[[:space:]]*(develop|master|main)$' | grep -vE '^[[:space:]]*release' | xargs -r git branch -d"
+# branch that merged work lands in: origin/develop if the repo has one, else the remote default
+_merged_target() {
+	git rev-parse -q --verify refs/remotes/origin/develop >/dev/null && echo origin/develop && return
+	git symbolic-ref -q --short refs/remotes/origin/HEAD && return
+	echo "No origin/develop or origin/HEAD (run: git remote set-head origin -a)" >&2
+	return 1
+}
+
+# gbc used to be an alias, and a live shell re-sourcing this file would expand it in the definition below
+unalias gbc 2>/dev/null
+
+# gbc: delete local branches already merged into the target branch
+# * marks the current branch, + one checked out in another worktree
+gbc() {
+	local base
+	git fetch --prune origin || return 1
+	base=$(_merged_target) || return 1
+	git branch --merged "$base" | grep -vE '^[*+]' | sed 's/^ *//' | grep -vE '^(develop|master|main)$' | grep -vE '^release' | grep -vxF "${base#origin/}" | xargs -r git branch -d
+}
 
 # gbcr: same on the shared remote. -n lists without deleting, otherwise it asks first
 gbcr() {
-	local branches
+	local branches base reply
 	git fetch --prune origin || return 1
-	branches=$(git branch -r --merged origin/develop --format='%(refname:short)' | sed 's|^origin/||' | grep -vE '^(origin|HEAD|develop|master|main)$' | grep -vE '^release')
+	base=$(_merged_target) || return 1
+	branches=$(git branch -r --merged "$base" --format='%(refname:short)' | sed 's|^origin/||' | grep -vE '^(origin|HEAD|develop|master|main)$' | grep -vE '^release' | grep -vxF "${base#origin/}")
 	if [ -z "$branches" ]; then
 		echo "Nothing merged to delete"
 		return 0
