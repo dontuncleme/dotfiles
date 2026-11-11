@@ -1,3 +1,4 @@
+tap "megamansec/tap"
 tap "tw93/tap/mole"
 tap "xykong/tap"
 
@@ -22,6 +23,7 @@ cask "font-fira-code"
 cask "git"
 cask "iina"
 cask "keka"
+cask "megamansec/tap/magic-switch"
 cask "mole"
 cask "notion"
 cask "obsidian"
