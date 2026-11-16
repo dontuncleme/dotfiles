@@ -7,6 +7,7 @@ This repository includes configuration for:
 - [Starship](https://starship.rs/) - Minimal, blazing-fast, and infinitely customizable prompt for any shell
 - [WezTerm](https://wezterm.org/) - GPU-accelerated cross-platform terminal emulator and multiplexer
 - [Claude Code](https://code.claude.com/docs) - Anthropic's CLI for Claude
+- DockLock - small Swift utility that keeps the Dock on one display
 
 ## Installation
 
@@ -103,3 +104,14 @@ pbcopy < ~/.ssh/github-personal.pub
 - `skills/`, `commands/` - directory symlinks so repo skills/commands show up in `~/.claude`
 
 On a fresh machine, plugins listed in `settings.json` may need manual install via `claude plugins install <name>` if Claude Code doesn't auto-install them.
+
+### DockLock
+
+Keeps the Dock on the main display. It stops the cursor at the bottom edge of the other screens, so macOS never moves the Dock there. If the Dock jumps to a newly plugged-in monitor anyway, DockLock pulls it back with a quick cursor nudge.
+
+`install.sh` builds it and sets it up as a LaunchAgent, `update.sh` rebuilds it when `docklock.swift` changes. After each build, re-add `~/.dotfiles/docklock/docklock` in System Settings > Privacy & Security > Accessibility.
+
+- Log: `/tmp/docklock.log`
+- Restart: `launchctl kickstart -k gui/$(id -u)/com.user.docklock`
+- Turn off: `launchctl bootout gui/$(id -u)/com.user.docklock`
+- Dock still sneaks over: bump `blockedPixels` in `docklock.swift` to 5-10

@@ -8,3 +8,5 @@ git/config-local.inc
 
 claude/skills/
 claude/*/.trash/
+
+docklock/docklock

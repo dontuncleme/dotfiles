@@ -56,7 +56,8 @@
     "caveman@caveman": true,
     "superpowers@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
-    "andrej-karpathy-skills@karpathy-skills": true
+    "andrej-karpathy-skills@karpathy-skills": true,
+    "swift-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "caveman": {
@@ -73,7 +74,7 @@
     }
   },
   "effortLevel": "high",
+  "awaySummaryEnabled": false,
   "tui": "fullscreen",
-  "theme": "dark-ansi",
-  "awaySummaryEnabled": false
+  "theme": "dark-ansi"
 }
