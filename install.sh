@@ -35,6 +35,9 @@ ln -sfn "$HOME/.dotfiles/claude/skills" "$HOME/.claude/skills"
 ln -sfn "$HOME/.dotfiles/claude/commands" "$HOME/.claude/commands"
 ln -sfn "$HOME/.dotfiles/claude/rules" "$HOME/.claude/rules"
 
+# Rex: app settings (refresh the snapshot with rex/export.sh)
+defaults import com.superlogical.rex "$HOME/.dotfiles/rex/com.superlogical.rex.plist"
+
 # DockLock
 swiftc -O "$HOME/.dotfiles/docklock/docklock.swift" -o "$HOME/.dotfiles/docklock/docklock"
 mkdir -p "$HOME/Library/LaunchAgents"

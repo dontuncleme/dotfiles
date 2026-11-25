@@ -26,6 +26,7 @@ Each tool gets its own directory with config files that get symlinked to their e
 | `claude/skills/` | (dir) | `~/.claude/skills/` |
 | `claude/commands/` | (dir) | `~/.claude/commands/` |
 | `claude/rules/` | (dir) | `~/.claude/rules/` |
+| `rex/` | `com.superlogical.rex.plist` | imported with `defaults import` (not symlinked), refreshed by `rex/export.sh` |
 | `docklock/` | `com.user.docklock.plist` | copied (path filled in) to `~/Library/LaunchAgents/`, binary built in place |
 
 ## Key details
