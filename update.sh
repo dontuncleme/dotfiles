@@ -47,11 +47,5 @@ if [ -f "$HOME/.dotfiles/claude/CLAUDE.md" ]; then
     ln -sfn "$HOME/.dotfiles/claude/rules" "$HOME/.claude/rules"
 fi
 
-# DockLock: rebuild only when the source changed, since a new binary loses its Accessibility permission
-if [ "$HOME/.dotfiles/docklock/docklock.swift" -nt "$HOME/.dotfiles/docklock/docklock" ]; then
-    swiftc -O "$HOME/.dotfiles/docklock/docklock.swift" -o "$HOME/.dotfiles/docklock/docklock"
-    launchctl kickstart -k "gui/$(id -u)/com.user.docklock"
-fi
-
 # Update dotfiles repository
 git pull origin $(git rev-parse --abbrev-ref HEAD)

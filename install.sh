@@ -37,10 +37,3 @@ ln -sfn "$HOME/.dotfiles/claude/rules" "$HOME/.claude/rules"
 
 # Rex: app settings (refresh the snapshot with rex/export.sh)
 defaults import com.superlogical.rex "$HOME/.dotfiles/rex/com.superlogical.rex.plist"
-
-# DockLock
-swiftc -O "$HOME/.dotfiles/docklock/docklock.swift" -o "$HOME/.dotfiles/docklock/docklock"
-mkdir -p "$HOME/Library/LaunchAgents"
-# launchd doesn't expand ~ or $HOME, so the plist is a template with the path filled in here
-sed "s|__HOME__|$HOME|g" "$HOME/.dotfiles/docklock/com.user.docklock.plist" > "$HOME/Library/LaunchAgents/com.user.docklock.plist"
-launchctl bootstrap "gui/$(id -u)" "$HOME/Library/LaunchAgents/com.user.docklock.plist"
